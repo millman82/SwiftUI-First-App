@@ -12,10 +12,9 @@ struct RoomDetail: View {
     let room: Room
     
     var body: some View {
-        Image(systemName: "photo")
-//        Image(room.imageName)
-//            .resizable()
-//            .aspectRatio(contentMode: .fit)
+        Image(room.imageName)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
             .navigationBarTitle(Text(room.name), displayMode: .inline)
     }
 }

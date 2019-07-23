@@ -34,9 +34,8 @@ struct RoomCell: View {
     
     var body: some View {
         NavigationLink(destination: RoomDetail(room: room)) {
-            Image(systemName: "photo")
-            //Image(room.thumbnailName)
-            //.cornerRadius(8)
+            Image(room.thumbnailName)
+            .cornerRadius(8)
             
             VStack(alignment: .leading) {
                 Text(room.name)
