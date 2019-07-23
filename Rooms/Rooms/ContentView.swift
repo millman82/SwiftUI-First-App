@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    var rooms: [Room] = []
+    @ObjectBinding var store = RoomStore()
     
     var body: some View {
         NavigationView {
-            List(rooms) { room in
+            List(store.rooms) { room in
                 RoomCell(room: room)
             }
             .navigationBarTitle(Text("Rooms"))
@@ -24,7 +24,7 @@ struct ContentView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(rooms: testData)
+        ContentView(store: RoomStore(rooms: testData))
     }
 }
 #endif

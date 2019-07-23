@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2716B11722E7B45A00C39EAB /* RoomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2716B11622E7B45A00C39EAB /* RoomStore.swift */; };
 		278DA24F22E77F61003C2460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA24E22E77F61003C2460 /* AppDelegate.swift */; };
 		278DA25122E77F61003C2460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA25022E77F61003C2460 /* SceneDelegate.swift */; };
 		278DA25322E77F61003C2460 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA25222E77F61003C2460 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2716B11622E7B45A00C39EAB /* RoomStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoomStore.swift; path = "../../../../../../../System/Volumes/Data/Users/millman/Development Projects/GitHub/SwiftUI-First-App/Rooms/Rooms/RoomStore.swift"; sourceTree = "<group>"; };
 		278DA24B22E77F61003C2460 /* Rooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278DA24E22E77F61003C2460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		278DA25022E77F61003C2460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				278DA25222E77F61003C2460 /* ContentView.swift */,
 				278DA26622E79BF7003C2460 /* RoomDetail.swift */,
 				278DA26222E780F3003C2460 /* Room.swift */,
+				2716B11622E7B45A00C39EAB /* RoomStore.swift */,
 				278DA25422E77F63003C2460 /* Assets.xcassets */,
 				278DA26422E7993F003C2460 /* Rooms.xcassets */,
 				278DA25922E77F63003C2460 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 				278DA24F22E77F61003C2460 /* AppDelegate.swift in Sources */,
 				278DA25122E77F61003C2460 /* SceneDelegate.swift in Sources */,
 				278DA26322E780F3003C2460 /* Room.swift in Sources */,
+				2716B11722E7B45A00C39EAB /* RoomStore.swift in Sources */,
 				278DA25322E77F61003C2460 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
