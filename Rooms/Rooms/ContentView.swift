@@ -13,11 +13,36 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(store.rooms) { room in
-                RoomCell(room: room)
+            List {
+                Section {
+                    Button(action: addRoom) {
+                        Text("Add Room")
+                    }
+                }
+                Section {
+                    ForEach(store.rooms) { room in
+                        RoomCell(room: room)
+                    }
+                    .onDelete(perform: delete)
+                    .onMove(perform: move)
+                }
             }
             .navigationBarTitle(Text("Rooms"))
+            .navigationBarItems(trailing: EditButton())
+            .listStyle(.grouped)
         }
+    }
+    
+    func addRoom() {
+        store.rooms.append(Room(name: "Hall 2", capacity: 2000))
+    }
+    
+    func delete(at offsets: IndexSet) {
+        store.rooms.remove(atOffsets: offsets)
+    }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        store.rooms.move(fromOffsets: source, toOffset: destination)
     }
 }
 
