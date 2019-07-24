@@ -17,6 +17,8 @@
 		278DA26322E780F3003C2460 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA26222E780F3003C2460 /* Room.swift */; };
 		278DA26522E7993F003C2460 /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278DA26422E7993F003C2460 /* Rooms.xcassets */; };
 		278DA26722E79BF7003C2460 /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA26622E79BF7003C2460 /* RoomDetail.swift */; };
+		27CA8FB922E8129800645A37 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 27CA8FBB22E8129800645A37 /* Localizable.stringsdict */; };
+		27CA8FBC22E812D900645A37 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27CA8FBE22E812D900645A37 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		278DA26222E780F3003C2460 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		278DA26422E7993F003C2460 /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
 		278DA26622E79BF7003C2460 /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
+		27CA8FBA22E8129800645A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		27CA8FBD22E812D900645A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		27CA8FBF22E8139100645A37 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		27CA8FC022E8139100645A37 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ar; path = ar.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 				278DA26622E79BF7003C2460 /* RoomDetail.swift */,
 				278DA26222E780F3003C2460 /* Room.swift */,
 				2716B11622E7B45A00C39EAB /* RoomStore.swift */,
+				27CA8FBE22E812D900645A37 /* Localizable.strings */,
+				27CA8FBB22E8129800645A37 /* Localizable.stringsdict */,
 				278DA25422E77F63003C2460 /* Assets.xcassets */,
 				278DA26422E7993F003C2460 /* Rooms.xcassets */,
 				278DA25922E77F63003C2460 /* LaunchScreen.storyboard */,
@@ -129,6 +137,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 278DA24222E77F61003C2460;
 			productRefGroup = 278DA24C22E77F61003C2460 /* Products */;
@@ -145,10 +154,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CA8FBC22E812D900645A37 /* Localizable.strings in Resources */,
 				278DA25B22E77F63003C2460 /* LaunchScreen.storyboard in Resources */,
 				278DA25822E77F63003C2460 /* Preview Assets.xcassets in Resources */,
 				278DA26522E7993F003C2460 /* Rooms.xcassets in Resources */,
 				278DA25522E77F63003C2460 /* Assets.xcassets in Resources */,
+				27CA8FB922E8129800645A37 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +190,26 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		27CA8FBB22E8129800645A37 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CA8FBA22E8129800645A37 /* en */,
+				27CA8FC022E8139100645A37 /* ar */,
+			);
+			name = Localizable.stringsdict;
+			path = "../../../../../../../System/Volumes/Data/Users/millman/Development Projects/GitHub/SwiftUI-First-App/Rooms/Rooms";
+			sourceTree = "<group>";
+		};
+		27CA8FBE22E812D900645A37 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CA8FBD22E812D900645A37 /* en */,
+				27CA8FBF22E8139100645A37 /* ar */,
+			);
+			name = Localizable.strings;
+			path = "../../../../../../../System/Volumes/Data/Users/millman/Development Projects/GitHub/SwiftUI-First-App/Rooms/Rooms";
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -186,6 +217,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -246,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

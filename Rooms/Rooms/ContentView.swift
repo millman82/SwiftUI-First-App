@@ -1,9 +1,5 @@
 //
 //  ContentView.swift
-//  Rooms
-//
-//  Created by Tim Miller on 7/23/19.
-//  Copyright © 2019 Tim Miller. All rights reserved.
 //
 
 import SwiftUI
@@ -56,7 +52,11 @@ struct ContentView_Previews: PreviewProvider {
                 .environment(\.sizeCategory, .extraExtraExtraLarge)
             
             ContentView(store: RoomStore(rooms: testData))
-                            .environment(\.colorScheme, .dark)
+                .environment(\.colorScheme, .dark)
+            
+            ContentView(store: RoomStore(rooms: testData))
+                .environment(\.layoutDirection, .rightToLeft)
+                .environment(\.locale, Locale(identifier: "ar"))
         }
     }
 }

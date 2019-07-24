@@ -1,9 +1,5 @@
 //
 //  RoomDetail.swift
-//  Rooms
-//
-//  Created by Tim Miller on 7/23/19.
-//  Copyright © 2019 Tim Miller. All rights reserved.
 //
 
 import SwiftUI
