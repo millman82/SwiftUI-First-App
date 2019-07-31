@@ -5,15 +5,20 @@
 import SwiftUI
 import Combine
 
-class RoomStore: BindableObject {
-    
-    var rooms: [Room] {
-        didSet { willChange.send() }
-    }
+class RoomStore: ObservableObject {
+//    let willChange = PassthroughSubject<Void, Never>()
+//
+//    var rooms: [Room] {
+//        didSet { willChange.send() }
+//    }
+//
+//    init(rooms: [Room] = []) {
+//        self.rooms = rooms
+//    }
+
+    @Published var rooms: [Room]
     
     init(rooms: [Room] = []) {
         self.rooms = rooms
     }
-    
-    var willChange = PassthroughSubject<Void, Never>()
 }

@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObjectBinding var store = RoomStore()
+    @ObservedObject var store: RoomStore
     
     var body: some View {
         NavigationView {
@@ -25,7 +25,7 @@ struct ContentView: View {
             }
             .navigationBarTitle(Text("Rooms"))
             .navigationBarItems(trailing: EditButton())
-            .listStyle(.grouped)
+            .listStyle(GroupedListStyle())
         }
     }
     

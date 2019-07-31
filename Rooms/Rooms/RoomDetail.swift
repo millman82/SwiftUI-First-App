@@ -14,7 +14,7 @@ struct RoomDetail: View {
                 .resizable()
                 .aspectRatio(contentMode: zoomed ? .fill : .fit)
                 .navigationBarTitle(Text(room.name), displayMode: .inline)
-                .tapAction {
+                .onTapGesture {
                     withAnimation(.easeInOut(duration: 2)) {
                         self.zoomed.toggle()
                     }
